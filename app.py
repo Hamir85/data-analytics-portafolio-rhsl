@@ -29,3 +29,12 @@ if histo_botton_type:
     fig_2 = px.histogram(data_cars, x = 'type')
 
     st.plotly_chart(fig_2)
+
+dispersion_botton = st.button('Construir un grafico de dispersión sobre el precio y el kilometraje')
+
+if dispersion_botton:
+    st.write('Creacón de grafico de dispersión')
+
+    fig_3 = px.scatter(data_cars,x = "odometer", y = "price")
+
+    st.plotly_chart(fig_3)
