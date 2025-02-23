@@ -1,0 +1,7 @@
+nunpy
+pandas
+streamlit
+matplotlib
+seaborn
+plotly
+sidetable
