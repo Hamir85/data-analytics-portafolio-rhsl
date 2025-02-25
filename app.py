@@ -9,6 +9,14 @@ st.header('Data Analytics Portafolio Renato Septien')
 st.write('Analisis esxloratorio de los datos de Vehiculos')
 
 
+st. subheader ('Tipos de datos de las columnas:')
+st. dataframe (data_cars.dtypes. rename('datatype'))
+
+
+st.subheader( 'Estadisticas descriptivas de los datos numericos:')
+st. dataframe (data_cars.describe())
+
+
 st.write('Revision de primeras filas de los datos')
 st.dataframe(data_cars.head())
 
